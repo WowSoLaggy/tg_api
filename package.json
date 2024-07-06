@@ -3,7 +3,14 @@
   "version": "1.0.0",
   "main": "tg_api.js",
   "description": "A library that provides an interface to the Telegram API",
-  "keywords": ["telegram", "tg", "api", "bot", "messaging", "chat"],
+  "keywords": [
+    "telegram",
+    "tg",
+    "api",
+    "bot",
+    "messaging",
+    "chat"
+  ],
   "author": "WowSoLaggy wowsolaggy@gmail.com",
   "license": "MIT",
   "repository": {
@@ -14,8 +21,7 @@
     "test": "node test.js"
   },
   "dependencies": {
-    "axios": "^1.7.2",
-    "dotenv": "^16.4.5",
-    "ydb-sdk": "^5.3.3"
+    "axios": "latest",
+    "dotenv": "latest"
   }
 }
