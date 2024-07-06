@@ -1,7 +1,7 @@
 {
   "name": "tg_api",
   "version": "1.0.0",
-  "main": "tg_api.js",
+  "main": "src/tg_api.js",
   "description": "A library that provides an interface to the Telegram API",
   "keywords": [
     "telegram",

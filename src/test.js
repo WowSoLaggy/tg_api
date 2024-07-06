@@ -8,7 +8,7 @@ const TELEGRAM_TOKEN = process.env.TELEGRAM_TOKEN;
 const CHAT_ID = process.env.CHAT_ID;
 
 
-async function runTest() {
+async function run_test() {
   try {
     const result = await send_message(TELEGRAM_TOKEN, CHAT_ID, 'Test message');
     console.log('Test result:', result);
@@ -17,4 +17,4 @@ async function runTest() {
   }
 }
 
-runTest();
+run_test();
