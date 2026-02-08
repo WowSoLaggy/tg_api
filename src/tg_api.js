@@ -35,12 +35,11 @@ async function extract_message(event) {
   if (!event.body)
     return null;
 
-  const body = event.body;
+  const body = JSON.parse(event.body);
   if (!body.message)
     return null;
 
-  const message = JSON.parse(body.message);
-  return message;
+  return body.message;
 }
 
 
