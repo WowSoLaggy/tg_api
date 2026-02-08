@@ -25,4 +25,23 @@ async function send_message(token, chat_id, text) {
   }
 }
 
-module.exports = { send_message };
+
+/**
+ * Extracts the message from a Telegram webhook event
+ * @param {Object} event - The webhook event object
+ * @returns {Object|null} - The extracted message object, or null if the message could not be extracted
+ */
+async function extract_message(event) {
+  if (!event.body)
+    return null;
+
+  const body = event.body;
+  if (!body.message)
+    return null;
+
+  const message = JSON.parse(body.message);
+  return message;
+}
+
+
+module.exports = { send_message, extract_message };
